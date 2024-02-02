@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+/* start of styling the components of the jsx  */
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #1A273A;
+    color: #fff;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    background-color: #1A273A;
+    color: #fff;
+    align-items: center;
+    margin-bottom: 7em;
+    filter: contrast(1);
+}
+
+.left-logo{
+    >h1{
+  font: bolder;
+  opacity: 1;
+    font-size: 1.1em;
+    }
+  
+    &:hover{
+        color: #FAFFA3;
+        cursor: pointer;
+    }
+}
+
+.right-navs ul li{
+    display: inline;
+    margin-left: 5em;
+    font-size: 1.1em;
+    width: 1em;
+    transition: transform 0.5s ease-in-out;
+    &:hover{
+        color: #FAFFA3;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.body-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right" ;
+    gap: 1em;
+}
+
+.left-hero{
+    grid-area: left;
+    justify-content: center;
+}
+.name-left-upper{
+    display: flex;
+    margin-bottom: 2em;
+    padding-left: 5em;
+    font: bolder;
+    font-size: 1.6em;
+}
+.name-left-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 6em;
+    font-size: 1.3em;
+}
+
+.right-hero{
+    grid-area: right;
+    padding-left: 9em;
+    justify-content: center;
+    width: 30em;
+
+    >img{
+        height: 25em;
+        border-radius: 50%;
+    }
+}
+.circular-motion{
+    animation: circularMotion 5s  infinite ease-in-out ;
+    transform-origin:center center ;
+}
+@keyframes circularMotion {
+    from{
+        transform: translate(0,5px);
+    }
+    to{
+        transform: translate(0, -5px);
+    }
+}
+
+.body-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #1A273A;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10em;
+    margin-bottom: 20em;
+    flex-direction: column;
+
+    >h2{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3em;
+        text-decoration: underline ;
+    }
+}
+
+.project{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.playlify{
+    display: flex;
+    margin-right: 10em;
+    
+}
+#img{
+    height: 20em;
+    border-radius: 50%;
+}
+
+
+.modern-farm{
+    display: flex;
+    margin-left: 10em;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 8em;
+
+    >h2{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2em;
+        text-decoration: underline ;
+    }
+
+    
+}
+.about p{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+footer{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+}
+
+.socials{
+    font-size: 1.5em;
+    justify-content: space-evenly;
+}
+.bx-envelope{
+    transition: transform 1s ease-in-out ;
+    &:hover{
+        cursor: pointer;
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+}
+.bxl-instagram{
+    transition: transform 1s ease-in-out ;
+    &:hover{
+        cursor: pointer;
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+}
+.bxl-twitter{
+    transition: transform 1s ease-in-out ;
+    &:hover{
+        cursor: pointer;
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+}
+.bxl-linkedin-square{
+    transition: transform 1s ease-in-out ;
+    &:hover{
+        cursor: pointer;
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+}
+.bxl-upwork{
+    transition: transform 1s ease-in-out ;
+    &:hover{
+        cursor: pointer;
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+}
+
+
+
+
